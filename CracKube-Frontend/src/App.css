@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/Fonts/Poppins-Regular.ttf)
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(./assets/Fonts/Poppins-Bold.ttf);
+}
+.navlogo {
+  font-family: Poppins-Bold;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.navbarLink {
+  margin-left: 15%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  
+}
+.navbarLink a {
+  color: #717579;
+}
+.navbarLink a:hover {
+  color: #2BC155;
+}
+.sidenav {
+  font-family: Poppins;
+  font-size: 18px;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #202020;
+  transition: .5s ease;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.navIcon {
+  background-color: rgb(20, 20, 20);
+  border-radius: 25%;
+  padding: 5px;
+  height: 24;
+  width: 24;
+  filter: grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(6);
+}
+
+.topbar {
+  width: 80%;
+  height: 10%;
+  background-color: #202020;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+
+}
