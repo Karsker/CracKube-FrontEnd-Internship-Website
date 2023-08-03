@@ -5,7 +5,7 @@ const DuePayment = (props) => {
     return (
         <div className="duePaymentContainer"> 
             <div style={{position: 'relative'}}> 
-                <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px", position: 'relative', left:'20px'}}>Latest Transactions</h1>
+                <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px", position: 'relative', left:'20px'}}>Payment Due</h1>
                 <img src={menuIcon} style = {{position: 'absolute', right:'30px', top:'0px'}}/>
             </div>
             <table>
