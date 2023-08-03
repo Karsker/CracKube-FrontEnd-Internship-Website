@@ -209,6 +209,10 @@ td {
   text-align: center;
 }
 
+.paymentUnpaid {
+  border: solid 1px #FD6162;
+  color: #FD6162;
+}
 /*CSS for due payment component*/
 .duePaymentContainer {
   width: 100%;
@@ -286,7 +290,7 @@ td {
   grid-template-rows: auto;
   justify-content: space-evenly;
   grid-template-areas: 
-    "header . . ."
+    "header header header header"
     "companyName companyName dueDate dueDate"
     "idAds idAds totalBudget sendBtn";
 }

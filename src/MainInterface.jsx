@@ -9,7 +9,7 @@ import AdCampaign from "./AdCampaignCard"
 const MainInterface = (props) => {
     return (
         <div class="cardHolder">
-            <h1 style={{fontFamily: 'Poppins-Bold', fontWeight:600, fontSize:40, marginLeft: '23%', gridArea:'header'}}>New Campaign</h1>
+            <h1 style={{fontFamily: 'Poppins-Bold', fontSize:40, position:'relative', gridArea:'header', textAlign:'left', width:'100%'}}>New Campaign</h1>
             <CurrentBalance/>
             <LatestTransaction/>
             <DuePayment/>

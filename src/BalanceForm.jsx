@@ -1,9 +1,14 @@
 import React from "react";
 import calendarIcon from './assets/Icons/Components/Calendar.png'
+import menuIcon from './assets/Icons/Components/menu.png'
+
 const BalanceForm = (props) => {
     return (
         <div className = "balanceFormContainer">
-            <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px", gridArea:'header'}}>Add Balance Form</h1>
+            <div style={{gridArea: 'header', position: 'relative'}}> 
+                <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px", position: 'relative', left:'10px'}}>Add Balance Form</h1>
+                <img src={menuIcon} style = {{position: 'absolute', right:'30px', top:'10px'}}/>
+            </div>
             <div style={{gridArea:'companyName', display:'flex', flexDirection:'column'}}>
                 <p style={{fontFamily: "Poppins-Bold", fontSize: "16px"}}>Company Name</p>
                 <input type="textbox" className='transferInput' style={{width: '100%', height:'30px'}}/>
