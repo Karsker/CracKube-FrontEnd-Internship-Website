@@ -15,7 +15,6 @@ const TopBar = (props) => {
 
             <div>
                 <div className="topBarStatusIcon"><img src={alertIcon}></img></div>
-                <img src={statusGreenIcon} style={{zIndex:'1'}}/>
             </div>
             <div className="topBarStatusIcon"><img src={messageIcon}></img></div>
             <div className="topBarStatusIcon"><img src={settingsIcon}></img></div>
