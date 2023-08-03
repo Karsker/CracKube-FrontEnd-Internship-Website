@@ -160,11 +160,12 @@
   width: 79%;
   height: 100%;
   /* gap: 15px 15px; */
-  grid-template-columns: 20% 20% 20% 20%;
-  justify-content: space-evenly;
+  grid-template-columns: 20% 20% 18% 18%;
+  justify-content: space-around;
   justify-items: center;
   grid-template-rows: auto;
   row-gap: 20px;
+  column-gap: 15px;
   grid-template-areas: 
     "header header . ."
     "balanceCard balanceCard transactionCard transactionCard"
