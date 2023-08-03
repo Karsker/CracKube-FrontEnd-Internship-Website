@@ -1,0 +1,288 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/Fonts/Poppins-Regular.ttf)
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(./assets/Fonts/Poppins-Bold.ttf);
+}
+.navlogo {
+  font-family: Poppins-Bold;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 15%;
+}
+.container {
+  height: 100%;
+  width: 100vw;
+  background-color: #161717;
+  overflow:auto;
+  /* border: solid 1px green; */
+}
+.navbarLink {
+  margin-left: 15%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.navbarLink a {
+  color: #717579;
+}
+.navbarLink a:hover {
+  color: white;
+}
+.navbarLink a:focus {
+  color: #2BC155;
+}
+.navbarLink:focus-within > .navIcon{
+  background-color: rgb(20, 20, 20);
+  border-radius: 25%;
+  padding: 5px;
+  height: 24;
+  width: 24;
+  filter: grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(6);
+}
+
+
+.sidenav {
+  font-family: Poppins;
+  font-size: 18px;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #202020;
+  transition: .5s ease;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* border: solid 1px yellow; */
+}
+.navIcon {
+  padding: 5px;
+  height: 24;
+  width: 24;
+}
+
+.topbar {
+  width: 80%;
+  height: 100px;
+  background-color: #202020;
+  margin-left: 20%;
+  margin-top:0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1;
+  position: fixed;
+  /* border: solid 1px red; */
+}
+
+/*CSS for top bar*/
+.searchBar {
+  width: 60%;
+  height: 60%;
+  background-color: #161717;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+}
+.searchArea {
+  border: none;
+  background-color: #161717;
+  font-size: 16px;
+  font-family: Poppins;
+}
+.searchArea:focus {
+  outline: none;
+}
+
+.topBarStatusIcon {
+  background-color: #161717;
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*CSS for current balance component*/
+.currentBalanceContainer {
+  width: 100%;
+  height: 250px;
+  background-color: #369Dc9;
+  border-radius: 12px;
+  grid-area: balanceCard;
+  padding: 15px;
+}
+
+/*CSS for main UI area (cards holder area)*/
+.cardHolder {
+  margin-left: 21%; 
+  position: relative;
+  top: 100px;
+  display: grid;
+  width: 79%;
+  height: 100%;
+  /* gap: 15px 15px; */
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-evenly;
+  justify-items: center;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  grid-template-areas: 
+    "header header . ."
+    "balanceCard balanceCard transactionCard transactionCard"
+    "paymentCard paymentCard transactionCard transactionCard"
+    "transferCard billingCard billingCard billingCard"
+    "balanceFormCard balanceFormCard balanceFormCard adCampaignCard"
+    "balanceFormCard balanceFormCard balanceFormCard campaignVideoCard";
+}
+
+/*CSS for transaction component*/
+.transactionContainer {
+  width: 100%;
+  background-color: #202020;
+  border-radius: 12px;
+  grid-area: transactionCard;
+  padding: 15px;
+}
+
+ table {
+  margin-top: 30px;
+  font-family: Poppins;
+  width: 100%;
+  font-size: 14px;
+  text-align: justify;
+}
+th {
+  font-family: Poppins-Bold;
+  border-bottom: solid 1px rgb(36, 36, 36);
+  text-align: center;
+}
+td {
+  border-bottom: solid 1px rgb(31, 31, 31);
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.paymentBtn {
+  border: solid 1px #2BC155;
+  color: #2BC155;
+  height: 32px;
+  text-align: center;
+}
+
+/*CSS for due payment component*/
+.duePaymentContainer {
+  width: 100%;
+  background-color: #202020;
+  border-radius: 12px;
+  grid-area: paymentCard;
+  padding: 15px;
+}
+
+/*CSS for transfer component*/
+.transferContainer {
+  width: 100%;
+  background-color: #202020;
+  border-radius: 12px;
+  grid-area: transferCard;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.transferInput {
+  outline: none;
+  border: none;
+  background-color: #161717;
+  width: 80%;
+  font-family: Poppins;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+/*CSS for billing container*/
+.billingContainer {
+  width: 100%;
+  background-color: #202020;
+  border-radius: 12px;
+  grid-area: billingCard;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.billingBtn {
+  color: black;
+  height: 32px;
+  text-align: center;
+  width: 100px;
+}
+.paid {
+  background-color: #2BC155;
+}
+.pending {
+  background-color: white;
+}
+.unpaid {
+  background-color: #FD6162;
+}
+.companyIcon {
+  display:inline-block;
+  background-color:#2BC155; 
+  color:black;
+  border-radius:50px;
+  width:16px;
+  padding:5px;
+  height:16px;
+  margin-right:15px;
+  text-align: center;
+}
+/*CSS for balance form container*/
+.balanceFormContainer {
+  width: 100%;
+  background-color: #202020;
+  border-radius: 12px;
+  grid-area: balanceFormCard;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  grid-template-areas: 
+    "header . . ."
+    "companyName companyName dueDate dueDate"
+    "idAds idAds totalBudget sendBtn";
+}
+
+.campaignContainer {
+  width: 100%;
+  background-color: #FF6D4C;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* grid-area: adCampaignCard; */
+  padding: 30px;
+}
