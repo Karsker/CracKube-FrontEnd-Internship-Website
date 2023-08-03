@@ -1,11 +1,11 @@
 import React from "react"
-import CurrentBalance from "./CurrentBalance"
-import LatestTransaction from "./LatestTransaction"
-import DuePayment from "./DuePayments"
-import Transfer from "./transfer"
-import BillingInfo from "./BillingInfo"
-import BalanceForm from "./BalanceForm"
-import AdCampaign from "./AdCampaignCard"
+import CurrentBalance from "/src/Components/CurrentBalance"
+import LatestTransaction from "/src/Components/LatestTransaction"
+import DuePayment from "/src/Components/DuePayments"
+import Transfer from "/src/Components/transfer"
+import BillingInfo from "/src/Components/BillingInfo"
+import BalanceForm from "/src/Components/BalanceForm"
+import AdCampaign from "/src/Components/AdCampaignCard"
 const MainInterface = (props) => {
     return (
         <div class="cardHolder">

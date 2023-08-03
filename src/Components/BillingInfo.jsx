@@ -1,6 +1,6 @@
 import React from "react"
-import showIcon from './assets/Icons/Components/Show.png'
-import menuIcon from './assets/Icons/Components/menu.png'
+import showIcon from '/src/assets/Icons/Components/Show.png'
+import menuIcon from '/src/assets/Icons/Components/menu.png'
 
 const BillingInfo = (props) => {
     return (

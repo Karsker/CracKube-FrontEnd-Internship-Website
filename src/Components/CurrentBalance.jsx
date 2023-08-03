@@ -1,5 +1,5 @@
 import React from 'react'
-import balanceIcon from './assets/Icons/Components/balance.png'
+import balanceIcon from '/src/assets/Icons/Components/balance.png'
 const CurrentBalance = (props) => {
     return (
         <div className="currentBalanceContainer">

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import SideNav from './SideNav'
-import TopBar from './TopBar'
-import MainInterface from './MainInterface'
+import SideNav from './Components/SideNav'
+import TopBar from './Components/TopBar'
+import MainInterface from './Components/MainInterface'
 function App() {
   const [count, setCount] = useState(0)
   return(

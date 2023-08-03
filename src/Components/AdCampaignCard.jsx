@@ -1,5 +1,5 @@
 import React from "react";
-import playIcon from './assets/Icons/Components/play.png'
+import playIcon from '/src/assets/Icons/Components/play.png'
 const AdCampaign = (props) => {
     return (
         <div className="campaignContainer" style={props.campaignStyles}>

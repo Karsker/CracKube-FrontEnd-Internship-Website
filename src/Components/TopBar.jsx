@@ -1,13 +1,12 @@
 import React from 'react'
-import searchIcon from './assets/Icons/SideNavbar/Search.png'
-import alertIcon from './assets/Icons/SideNavbar/Alarm.png'
-import messageIcon from './assets/Icons/TopBar/Message.png'
-import settingsIcon from './assets/Icons/TopBar/Settings.png'
-import userIcon from './assets/Icons/Components/user.png'
-import statusGreenIcon from './assets/Icons/TopBar/statusGreen.png'
-import statusGreyIcon from './assets/Icons/TopBar/statusGrey.png'
-import statusRedIcon from './assets/Icons/TopBar/statusRed.png'
-import samanthaUserIcon from './assets/Icons/TopBar/samantha-user.png'
+import searchIcon from '/src/assets/Icons/SideNavbar/Search.png'
+import alertIcon from '/src/assets/Icons/SideNavbar/Alarm.png'
+import messageIcon from '/src/assets/Icons/TopBar/Message.png'
+import settingsIcon from '/src/assets/Icons/TopBar/Settings.png'
+import statusGreenIcon from '/src/assets/Icons/TopBar/statusGreen.png'
+import statusGreyIcon from '/src/assets/Icons/TopBar/statusGrey.png'
+import statusRedIcon from '/src/assets/Icons/TopBar/statusRed.png'
+import samanthaUserIcon from '/src/assets/Icons/TopBar/samantha-user.png'
 const TopBar = (props) => {
     return (
         <div class="topbar">

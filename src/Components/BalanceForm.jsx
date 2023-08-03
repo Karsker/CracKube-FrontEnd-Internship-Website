@@ -1,6 +1,6 @@
 import React from "react";
-import calendarIcon from './assets/Icons/Components/Calendar.png'
-import menuIcon from './assets/Icons/Components/menu.png'
+import calendarIcon from '/src/assets/Icons/Components/Calendar.png'
+import menuIcon from '/src/assets/Icons/Components/menu.png'
 
 const BalanceForm = (props) => {
     return (

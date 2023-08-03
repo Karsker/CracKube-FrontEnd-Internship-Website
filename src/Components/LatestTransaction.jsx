@@ -1,5 +1,5 @@
 import React from "react"
-import menuIcon from './assets/Icons/Components/menu.png'
+import menuIcon from '/src/assets/Icons/Components/menu.png'
 const LatestTransaction = (props) => {
     return (
         <div className="transactionContainer">
