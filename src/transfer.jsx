@@ -11,7 +11,7 @@ const Transfer = (props) => {
             <p style={{fontFamily:"Poppins", fontSize: "16px"}}>Your Pin</p>
             <div style={{display:'flex', flexDirection:'row', width:'80%'}}>
                 <input type="textbox" className='transferInput'/>
-                <button style={{borderRadius:'12px', backgroundColor:'#369DC9', color:'black'}}>Transfer</button>
+                <button style={{borderRadius:'12px', backgroundColor:'#369DC9', color:'black', fontFamily:'Poppins', fontSize:'12px', width:'150px'}}>Transfer</button>
             </div>
         </div>
     )

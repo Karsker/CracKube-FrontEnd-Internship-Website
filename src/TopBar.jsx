@@ -7,6 +7,7 @@ import userIcon from './assets/Icons/Components/user.png'
 import statusGreenIcon from './assets/Icons/TopBar/statusGreen.png'
 import statusGreyIcon from './assets/Icons/TopBar/statusGrey.png'
 import statusRedIcon from './assets/Icons/TopBar/statusRed.png'
+import samanthaUserIcon from './assets/Icons/TopBar/samantha-user.png'
 const TopBar = (props) => {
     return (
         <div class="topbar">
@@ -27,9 +28,13 @@ const TopBar = (props) => {
                 <div className="topBarStatusIcon"><img src={settingsIcon} style={{position:'relative'}}></img></div>
                 <img src={statusGreyIcon} style={{position:'absolute', zIndex:1, top:'0px', right:'0px', marginLeft:'100px'}}/>
             </div>
-            
-            <p style={{fontFamily:'Poppins-Bold'}}>User</p>
-            <div className="topBarStatusIcon"><img src={userIcon} style={{height:'60px', width:'60px'}}></img></div>
+            <div className="userDetails">
+                <div className="userName">
+                    <p style={{fontFamily:'Poppins-Bold', fontSize:'16px'}}>Samantha</p>
+                    <p style={{fontFamily:'Poppins', color:'#828282', fontSize:'12px'}}>Peterdraw.co</p>
+                </div>
+                <div className="topBarStatusIcon"><img src={samanthaUserIcon} style={{height:'60px', width:'60px'}}></img></div>
+            </div>
         </div>
     )
 }
