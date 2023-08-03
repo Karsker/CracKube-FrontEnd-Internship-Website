@@ -26,14 +26,17 @@
   overflow:auto;
   /* border: solid 1px green; */
 }
+
+
 .navbarLink {
   margin-left: 15%;
   margin-top: 10%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 20px;
+  /* border:solid 1px red; */
   
 }
 
@@ -54,7 +57,9 @@
   width: 24;
   filter: grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(6);
 }
-
+.navbarLink:focus-within > .selectionBar {
+  visibility: visible;
+}
 
 .sidenav {
   font-family: Poppins;
@@ -72,6 +77,17 @@
   flex-direction: column;
   align-items: start;
   /* border: solid 1px yellow; */
+}
+.selectionBar {
+  width:8px;
+  background-color: #2BC155;
+  height: 40px;
+  /* margin-right: 120px; */
+  position: absolute;
+  right: 0px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  visibility: hidden;
 }
 .navIcon {
   padding: 5px;

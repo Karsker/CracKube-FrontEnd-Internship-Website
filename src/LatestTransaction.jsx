@@ -1,8 +1,12 @@
 import React from "react"
+import menuIcon from './assets/Icons/Components/menu.png'
 const LatestTransaction = (props) => {
     return (
         <div className="transactionContainer">
-            <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px"}}>Latest Transactions</h1>
+            <div style={{position: 'relative'}}> 
+                <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px", position: 'relative', left:'20px'}}>Latest Transactions</h1>
+                <img src={menuIcon} style = {{position: 'absolute', right:'30px', top:'0px'}}/>
+            </div>
             <table>
                 <tr>
                     <th><input type="checkbox"/></th>

@@ -1,10 +1,14 @@
 import React from "react"
 import showIcon from './assets/Icons/Components/Show.png'
+import menuIcon from './assets/Icons/Components/menu.png'
 
 const BillingInfo = (props) => {
     return (
         <div class="billingContainer">
-            <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px"}}>Billing Info</h1>
+            <div style={{position: 'relative'}}> 
+                <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px", position: 'relative', left:'20px'}}>Billing Info</h1>
+                <img src={menuIcon} style = {{position: 'absolute', right:'30px', top:'0px'}}/>
+            </div>
             <table>
                 <tr>
                     <th>Company</th>

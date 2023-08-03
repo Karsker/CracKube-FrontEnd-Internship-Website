@@ -2,7 +2,7 @@ import React from "react"
 const Transfer = (props) => {
     return (
         <div className="transferContainer">
-            <h1 style={{fontFamily: "Poppins-Bold", fontSize: "28px"}}>Transfer</h1>
+            <h1 style={{fontFamily: "Poppins-Bold", fontSize: "20px"}}>Transfer</h1>
             <p style={{fontFamily:"Poppins", fontSize: "16px"}}>Transfer to</p>
             <input type="textbox" className='transferInput'/>
             <p style={{fontFamily:"Poppins", fontSize: "16px"}}>Amount</p>
