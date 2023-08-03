@@ -26,6 +26,9 @@
   overflow:auto;
   /* border: solid 1px green; */
 }
+.container::-webkit-scrollbar {
+  display: none;
+}
 
 
 .navbarLink {
